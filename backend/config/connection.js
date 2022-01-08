@@ -6,7 +6,7 @@ module.exports = async function con() {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     };
-    await mongoose.connect(process.env.LOCAL_DB, connectionParams);
+    await mongoose.connect(process.env.DB, connectionParams);
     console.log("connected to database.");
   } catch (error) {
     console.log(error, "could not connect to database.");
