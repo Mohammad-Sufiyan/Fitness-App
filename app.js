@@ -16,6 +16,7 @@ var userRouter=require("./routes/user");
 var leaderboardRouter=require("./routes/leaderBoard");
 var contestRouter=require("./routes/contest");
 var exerciseRouter = require('./routes/exercise')
+var discussionRouter=require('./routes/discussion')
 //api
 var userAPIRouter=require('./api/routes/userAPIRouter');
 var contestAPIRouter=require('./api/routes/contestAPIRouter');
@@ -55,8 +56,8 @@ app.use("/",indexRouter);
 app.use("/user",userRouter);
 app.use("/leaderboard",leaderboardRouter)
 app.use("/contest",contestRouter)
+app.use("/discussion",discussionRouter)
 app.use(exerciseRouter)
-
 app.use("/api/user",userAPIRouter);
 app.use("/api/contest",contestAPIRouter);
 app.use("/api/diet",dietAPIRouter);
