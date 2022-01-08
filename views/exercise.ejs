@@ -17,8 +17,8 @@
           <p class="card-text" style="color: white;">Descriptions : <%= data.description%></p>
           <p class="card-text" style="color: white;">Modified : <%= data.modified%></p>
             <center><button onclick="setInterval(countdown, 1000);" style="color: white;" class="btn btn-outline-dark">Start</button></center>
-            <form action="/streak" method="GET">
-              <center><button style="margin-top: 10px;color: white;" id="streakbtn" class="btn btn-outline-dark" type="submit" disabled>Get your Streak</button></center>
+            <form action="/streak/<%= data.day%>" method="GET">
+              <center><button style="margin-top: 10px;color: white;" id="streakbtn" class="btn btn-outline-dark" type="submit">Get your Streak</button></center>
             </form>
         </div>
       </div>

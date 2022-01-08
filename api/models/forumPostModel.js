@@ -7,10 +7,7 @@ var forumPostSchema=new mongoose.Schema({
     },
     txt_msg:{
         type:String
-    },
-   post_img:[{
-        type:String
-    }]
+    }
 },
 { timestamps: true }
 );
