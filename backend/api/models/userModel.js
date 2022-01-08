@@ -10,6 +10,9 @@ var UsersSchema=new mongoose.Schema({
     profile_image:{
         type:String
     },
+    streak:{
+        type:Number
+    },
     email:{
         type:String
     },

@@ -1,0 +1,48 @@
+
+body {
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navbar-vertical.navbar-expand-lg {
+	display: block;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	max-width: 350px;
+	overflow-y: auto;
+}
+
+.navbar-vertical .navbar-nav .nav-link {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	color: black;
+}
+
+.navbar-vertical.navbar-expand-lg .navbar-nav .nav .nav-link {
+	padding-left: 2.25rem;
+}
+
+.navHeading {
+	padding-left: 0.35rem;
+}
+.navPagesSub .nav-item .nav-link {
+	padding-left: 3.25rem !important;
+}
+
+.nav-link {
+	font-weight: bold;
+	color: black;
+}
+.highlight {
+	background: #7ab1f0;
+	border-radius: 25px;
+	color: white;
+}
+
+li {
+	padding: 0 20px;
+}
