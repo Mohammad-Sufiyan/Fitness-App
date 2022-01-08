@@ -139,17 +139,15 @@ exports.getUserProfile=async(req,res,next)=>{
 }
 
 exports.updateProfile=async(req,res,next)=>{
-var {userID,name,contact,password}=req.body
-console.log(req.file);
+var {userID,name,contact}=req.body
 console.log(req.body)
   var findingAndUpdatingProfile= User.findOneAndUpdate({_id:userID},{
     name:name,
     contact:contact,
-    password:await hashPassword(password),
-    profile_image:req.file.path
+    profile_image:req.file?req.file.path:req.body.path
 
     });
     findingAndUpdatingProfile.exec((err,singleData)=>{  
-  res.status(200).send({msg:"Profile Updated Successfully!!!"});
+  res.status(200).send({msg:"Profile Updated Successfully!!!",data:singleData});
 });
 }
