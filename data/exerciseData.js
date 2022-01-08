@@ -96,7 +96,7 @@ const exerciseData = [
         "month":"January",
         "day":"8",
         "gif": "https://media1.giphy.com/media/lRe4b5OEtBpXyvvXua/giphy.gif",
-        "name": "Jump Squat with Overhead Touch",
+        "name": "Jump Squat Overhead",
         "description": "Feet shoulder-width apart. Squat with knees behind toes, jump up, touch hands together over your head, return to squat and repeat",
         "modified": "Slight squat and smaller jump",
         "focus": [
