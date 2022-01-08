@@ -218,27 +218,15 @@ Leaderboard
     Leaderboard
   </h1>
   <ol>
+    <% if(leaderData.leaderboardData.length){ 
+      leaderData.leaderboardData.forEach(function(row){
+      %>
     <li>
-      <mark>Jerry Wood</mark>
-      <small>315</small>
+      <mark><%= row.name %></mark>
+      <small><%= row.streak %></small>
     </li>
-    <li>
-      <mark>Brandon Barnes</mark>
-      <small>301</small>
-    </li>
-    <li>
-      <mark>Raymond Knight</mark>
-      <small>292</small>
-    </li>
-    <li>
-      <mark>Trevor McCormick</mark>
-      <small>245</small>
-    </li>
-    <li>
-      <mark>Andrew Fox</mark>
-      <small>203</small>
-    </li>
-  </ol>
+    <% })} %>
+      </ol>
 </div>
 
 

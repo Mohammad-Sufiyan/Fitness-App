@@ -11,16 +11,16 @@ var connection=require('./config/connection');
 
 var app = express();
 //views router
-var indexRouter=require("./routes/index")
+var indexRouter=require("./routes/index");
 var userRouter=require("./routes/user");
 var leaderboardRouter=require("./routes/leaderBoard");
 var contestRouter=require("./routes/contest");
+var exerciseRouter = require('./routes/exercise')
 //api
 var userAPIRouter=require('./api/routes/userAPIRouter');
 var contestAPIRouter=require('./api/routes/contestAPIRouter');
 var dietAPIRouter=require('./api/routes/dietAPIRouter');
 var leaderboardAPIRouter=require('./api/routes/leaderboardAPIRouter');
-
 //importing database connection
 (async ()=>await connection())();
 // view engine setup
@@ -55,11 +55,11 @@ app.use("/",indexRouter);
 app.use("/user",userRouter);
 app.use("/leaderboard",leaderboardRouter)
 app.use("/contest",contestRouter)
+app.use(exerciseRouter)
 
 app.use("/api/user",userAPIRouter);
 app.use("/api/contest",contestAPIRouter);
 app.use("/api/diet",dietAPIRouter);
 app.use("/api/leaderboard",leaderboardAPIRouter);
-
 
 module.exports = app;

@@ -178,31 +178,41 @@
 
 	</style>
 </head>
-<body>
-	<div class="container">
+<body style="background-color: black;">
+	<div class="container" style="background-color: black;">
+
+    <% exerciseData.forEach(function(data){ %>
+
 		<div class="card">
-		  <img src="excercise.gif" alt="Person" class="card__image">
-		  <p class="card__name">Push-Ups</p>
+		  <img src="<%= data.gif%>" alt="Person" class="card__image">
+		  <p class="card__name"><%= data.name%></p>
 		  <div class="grid-container">
-	  
+	
 			<div class="grid-child-posts">
-			  January
+			  <%= data.month%>
 			</div>
 	  
 			<div class="grid-child-followers">
-			  Day : 1
+			  Day : <%= data.day%>
 			</div>
 	  
 		  </div>
 		  <ul class="social-icons">
-			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <p style="font-size: 20px;"><%= new Intl.DateTimeFormat('en-GB', { year: 'numeric', month: 'long', day: '2-digit'}).format(new Date()) %></p>
+			<!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li>
 			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-			<li><a href="#"><i class="fa fa-codepen"></i></a></li>
+			<li><a href="#"><i class="fa fa-codepen"></i></a></li> -->
 		  </ul>
-		  <button class="btn draw-border">Start</button>
-	  
+      <% if (data.day == new Date().getDate()) { %>
+		  <a href="/contest/<%= data.id%>"class="btn draw-border">Start</a>
+      <% } else if(data.day < new Date().getDate()) {%>
+        <button class="btn draw-border">Finished</button>
+        <% } else { %>
+        <button class="btn draw-border" disabled>Not Started</button>
+        <% }%>
 		</div>
+    <% }); %>
 	  </div>
 	  
 </body>
