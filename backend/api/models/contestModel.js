@@ -10,9 +10,6 @@ var ContestSchema=new mongoose.Schema({
     },
     day:{
         type:String
-    },
-    streak:{
-        type:String
     }
   
 },

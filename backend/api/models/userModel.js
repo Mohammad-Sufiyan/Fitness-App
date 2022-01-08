@@ -16,6 +16,9 @@ var UsersSchema=new mongoose.Schema({
     password:{
         type:String
     },
+    streak:{
+        type:Number
+    }
 },
 { timestamps: true }
 );
