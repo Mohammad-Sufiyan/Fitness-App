@@ -11,7 +11,7 @@ var connection=require('./config/connection');
 
 var app = express();
 //views router
-var indexRouter=require("./routes/index")
+var indexRouter=require("./routes/index");
 var userRouter=require("./routes/user");
 var leaderboardRouter=require("./routes/leaderBoard");
 var contestRouter=require("./routes/contest");
