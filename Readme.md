@@ -46,37 +46,37 @@ Fitness-App focuses on building consistency among peers for exercises and buildi
 </div><br>
 <h4>Login Page</h4>
 <div>
-<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/main/screenshot/login.JPG" width = 80% height= 70%><br>
+<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/master/screenshot/login.JPG" width = 80% height= 70%><br>
 </div><br>
 
 <h4>Home Page</h4>
 <div>
-<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/main/screenshot/home.JPG" width = 80% height= 70%><br>
+<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/master/screenshot/home.JPG" width = 80% height= 70%><br>
 </div><br>
 
 <h4>Profile Page</h4>
 <div>
-<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/main/screenshot/profile.JPG" width = 80% height= 70%><br>
+<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/master/screenshot/profile.JPG" width = 80% height= 70%><br>
 </div><br>
 
 <h4>Contest</h4>
 <div>
-<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/main/screenshot/contest.JPG" width = 80% height= 70%><br>
+<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/master/screenshot/contest.JPG" width = 80% height= 70%><br>
 </div><br>
 
 <h4>Exercise Page</h4>
 <div>
-<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/main/screenshot/exercise.JPG" width = 80% height= 70%><br>
+<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/master/screenshot/exercise.JPG" width = 80% height= 70%><br>
 </div><br>
 
 <h4>Discussion Page</h4>
 <div>
-<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/main/screenshot/discussion.JPG" width = 80% height= 70%><br>
+<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/master/screenshot/discussion.JPG" width = 80% height= 70%><br>
 </div><br>
 
 <h4>Leaderboard Page</h4>
 <div>
-<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/main/screenshot/leaderboard.JPG" width = 80% height= 70%><br>
+<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/master/screenshot/leaderboard.JPG" width = 80% height= 70%><br>
 </div><br>
 
 <h2>Author</h2>
