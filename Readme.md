@@ -42,9 +42,8 @@ Fitness-App focuses on building consistency among peers for exercises and buildi
 
 <h4>Register Page</h4>
 <div>
-<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/main/screenshot/register.JPG" width = 80% height= 70%><br>
+<img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/master/screenshot/register.JPG" width = 80% height= 70%><br>
 </div><br>
-
 <h4>Login Page</h4>
 <div>
 <img src="https://github.com/khanjasir90/Fitness-App-DotSlash/blob/main/screenshot/login.JPG" width = 80% height= 70%><br>
