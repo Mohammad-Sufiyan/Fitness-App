@@ -76,24 +76,31 @@
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
 								<li class="active">
-									<a href="index.html">Home</a>
+									<a href="/">Home</a>
 								</li>
 								<li>
-									<a href="classes.html" class="fh5co-sub-ddown"><%= session.userInfo?"Welcome, "+session.userInfo.user.name:"User" %></a>
+									<a href="#" class="fh5co-sub-ddown"><%= session.userInfo?"Welcome, "+session.userInfo.user.name:"User" %></a>
 									 <ul class="fh5co-sub-menu">
-									 	<li><a href="/user/profile/<%= session.userInfo?session.userInfo.user._id:'null' %>">Profile</a></li>
 										 <% if(session.userInfo){ %>
 									 	<li><a href="/user/logout">Logout</a></li>
+										 <li><a href="/user/profile/<%= session.userInfo?session.userInfo.user._id:'null' %>">Profile</a></li>
 										 <% }else{ %>
 									 	<li><a href="/user/login">Login/Signup</a></li>
 										 <% } %>
 										
 									</ul>
 								</li>
-								
+								<% if(session.userInfo){ %>
 								<li><a href="/contest">Contest</a></li>
 								<li><a href="/leaderboard">Leader Board</a></li>
-								<li><a href="#">Discussion</a></li> 
+								<li><a href="/discussion">Discussion</a></li> 
+								<% }else{ %>
+									<li><a href="#">Contest</a></li>
+									<li><a href="#">Leader Board</a></li>
+									<li><a href="#">Discussion</a></li> 
+
+									<% } %>
+
 							</ul>
 						</nav>
 					</div>
