@@ -2,15 +2,18 @@ import React from "react";
 import reactDom from "react-dom";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "../style/leaderboard.css";
+import Footer from "./footer";
+import NavBar from "./navbar";
 
 class Leaderboard extends React.Component{
     render() {
         return(
             <div>
-                <div class="leaderboard">
+                <NavBar/>
+                <div className="leaderboard">
                     <h1>
-                        <svg class="ico-cup">
-                        <Link to="#cup"></Link>
+                        <svg className="ico-cup">
+                        <a href="#cup"></a>
                         </svg>
                         Most active Players
                     </h1>
@@ -37,6 +40,8 @@ class Leaderboard extends React.Component{
                         </li>
                     </ol>
                     </div>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <Footer/>
             </div>
         );
     }

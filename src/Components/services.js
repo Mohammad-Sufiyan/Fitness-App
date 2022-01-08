@@ -10,6 +10,19 @@ class Services extends React.Component{
     render() {
         return(
             <div>
+                <section className="wt-section hero-large hero mt-md-5">
+                        <div className="hero-img bg-overlay" style={{backgroundImage: "https://images.unsplash.com/photo-1641381612269-afde1eac2f96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"}}></div>
+                        <div className="container">
+                            <div className="row align-items-center text-white">
+                                <div className=" col-md-6">
+                                    <h1 className="text-uppercase mb-3 display-3 font-weight-bolder aos-init aos-animate" data-aos="fade-right">
+                                        Ultimate Fitness
+                                    </h1>
+                                    <button className="btn btn-lg btn-outline-light py-2 mt-3 px-4 btn-pill aos-init aos-animate" data-aos="fade-left">Our Price</button>
+                                </div>
+                            </div>
+                        </div>
+                </section>
                 <section className="wt-section bg-light" id="services">
                     <div className="container"> 
                         <div className="row justify-content-md-center text-center pb-lg-4 mb-lg-5 mb-4">

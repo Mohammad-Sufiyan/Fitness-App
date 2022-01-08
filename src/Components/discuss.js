@@ -1,21 +1,23 @@
 import React from "react";
 import reactDom from "react-dom";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import "../style/diet.css";
-import Footer from "./footer";
 import NavBar from "./navbar";
+import Footer from "./footer";
 
-class Leaderboard extends React.Component{
+class Discuss extends React.Component{
     render() {
         return(
             <div>
                 <NavBar/>
-                
-                    
+
                 <Footer/>
             </div>
         );
     }
 }
 
-export default Diet;
+export default Discuss;
+
+
+
+
