@@ -3,7 +3,7 @@ const exercise = require('express')
 const router = express.Router()
 const exerciseData = require('../data/exerciseData')
 const User = require('../api/models/userModel')
-const ContestModel = require('../api/models/contestModel') 
+const Contest = require('../api/models/contestModel') 
 router.get("/contest/:id",(req,res)=> {
     const id = req.params.id;
     let itemYouWant = null;
@@ -16,7 +16,6 @@ router.get("/contest/:id",(req,res)=> {
 })
 
 router.get('/streak/:id', async(req,res)=>{
-    
 })
 
 
